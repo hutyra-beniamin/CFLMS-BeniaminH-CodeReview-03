@@ -10,9 +10,40 @@
 
 /*options style*/
 
+body {
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+}
+
 .container1 {
-    background-image: url(../traffic.jpg);
+    background-image: url(../img/traffic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 40vw;
-    border: 2px solid;
+    height: 50vw;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.container3 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #CECECE;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-family: sans-serif;
+    color: #3F3F3F;
+    h2 {
+        padding: 0;
+        margin: 0;
+        padding-bottom: 0.5em;
+    }
+    h3 {
+        padding: 0;
+        margin: 0;
+    }
 }
