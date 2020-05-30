@@ -14,7 +14,7 @@
     <header>
         <div id="header">
             <img src="img/logo.png" alt="">
-            <img src="img/banner.png" alt="">
+            <img class="banner" src="img/banner.png" alt="">
         </div>
     </header>
     <!--Header ends-->
@@ -30,70 +30,86 @@
         <div>
             <div class="container1">
                 <h1>Car Insurance</h1>
-            </div>
 
-            <div class="container2">
-                <div>
-                    <div>
-                        <label for="yourName">Your Name</label><br>
-                        <input type="text" name="name">
+
+                <div class="container2">
+                    <h2>Great coverage begins <br> with custom quote</h2>
+                    <div id="box1">
+                        <div class="top">
+                            <label for="yourName">Your Name</label>
+                            <br>
+                            <br>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="top">
+                            <label for="yourName">Age</label>
+                            <br>
+                            <br>
+                            <input type="text" id="age" name="age">
+                        </div>
                     </div>
-                    <div>
-                        <label for="yourName">Age</label><br>
-                        <input type="text" name="age">
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <label for="Country">Country</label><br>
-                        <select name="" id="">
+                    <div id="box2">
+                        <div class="bottom">
+                            <label for="selectOption">Country</label>
+                            <br>
+                            <br>
+                            <select id="selectOption">
                             <option selected>Austria</option>
-                            <option>Hungry</option>
+                            <option>Hungary</option>
                             <option>Greece</option>
                         </select>
+                        </div>
+                        <div class="bottom">
+                            <label for="horsepower">Horsepower of your car</label>
+                            <br>
+                            <br>
+                            <input type="text" name="horsepower" id="horsepower">
+                        </div>
                     </div>
-                    <div>
-                        <label for="horsepower">Horsepower of your car</label><br>
-                        <input type="text" name="horsepower">
-                    </div>
+                    <button type="button" id="calculate"> Calculate </button>
+                    <p id="result"></p>
+
                 </div>
-                <button> Calculate </button>
-                <p>Result</p>
 
+                <div class="container3">
+                    <h2>Un-complicating car coverage</h2>
+                    <h3>Understanding your coverage options shouldn't be so hard.</h3>
+                    <h3>We'll guid you through available coverage types,</h3>
+                    <h3>starting with who and what is coverd</h3>
+                </div>
             </div>
-
-            <div class="container3">
-                <h2>Un-complicating car coverage</h2>
-                <h3>Understanding your coverage options shouldn't be so hard.</h3>
-                <h3>We'll guid you through available coverage types,</h3>
-                <h3>starting with who and what is coverd</h3>
-            </div>
-
+            <div id="car"><img src="img/dog.jpg" alt=""></div>
             <div class="options">
                 <div class="item1">
-                    <h3><a href="#">What comes standard</a></h3>
-                    <ul>The coverage you need
-                        <li> &#10004; Bodily Injury</li>
-                        <li> &#10004; Property Damage</li>
-                        <li> &#10004; Medical Payments</li>
+                    <h3><a href="./index.html">What comes standard</a></h3>
+                    <ul>The coverage you need <br>
+                        <li> <span>&#10004;</span> Bodily Injury</li>
+                        <li> <span>&#10004;</span> Property Damage</li>
+                        <li> <span>&#10004;</span> Medical Payments</li>
 
                     </ul>
+                    <hr>
                     <h4>Benefits</h4>
                     <p>12-month rate gurantee | 24/7 customer service | Lifetime Repair Gurantee</p>
                 </div>
                 <div class="item2">
-                    <h3><a href="#">Add-on protection & coverage</a></h3>
+                    <h3><a href="./index.html">Add-on protection & coverage</a></h3>
                     <ul>For more peace of mind
-                        <li>Better Car Replacement</li>
-                        <li>Towing & Labor</li>
-                        <li>Rental Car Coverage</li>
+                        <li> <span>&#10004;</span> Better Car Replacement</li>
+                        <li> <span>&#10004;</span> Towing & Labor</li>
+                        <li> <span>&#10004;</span> Rental Car Coverage</li>
 
                     </ul>
+                    <hr>
+                    <hr>
                     <h4>Earnd Benefits</h4>
+
                     <p>Accident Forgivness <sup>1</sup> | New Car Replacemnet&trade;</p>
 
                 </div>
+
             </div>
+
 
 
         </div>
@@ -110,6 +126,8 @@
     <footer>
         <div id="footer">
             <img src="img/logo-inv.png" alt="">
+            <br>
+            <br>
             <h4>Beniamin Hutyra CodeFactory 2020</h4>
         </div>
     </footer>

@@ -6,44 +6,77 @@
 
 /*navbar style*/
 
+@import "./main-content";
+
+/* main content style*/
+
 @import "./options";
 
 /*options style*/
 
+@import "./footer";
+
+/*footer style */
+
+
+/* additional style start*/
+
 body {
+    font-family: sans-serif;
     h1 {
         margin: 0;
         padding: 0;
+        padding-left: 2em;
+        padding-top: 2em;
+        color: white;
+        font-size: 4vw;
+    }
+    input {
+        width: 15vw;
+    }
+    select {
+        width: 15vw;
+    }
+    #car {
+        display: none;
     }
 }
 
-.container1 {
-    background-image: url(../img/traffic.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vw;
-    margin-top: 0;
-    padding-top: 0;
-}
 
-.container3 {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #CECECE;
-    padding-top: 2em;
-    padding-bottom: 2em;
+/*style for result of the calulation start*/
+
+#result {
+    text-align: center;
+    color: green;
     font-family: sans-serif;
-    color: #3F3F3F;
-    h2 {
-        padding: 0;
-        margin: 0;
-        padding-bottom: 0.5em;
-    }
-    h3 {
-        padding: 0;
-        margin: 0;
+    font-size: 1.5em;
+    text-shadow: 15px 6px 3px rgba(4, 164, 9, 0.69);
+}
+
+
+/*style for result ends*/
+
+
+/*additional style ends*/
+
+@media screen and (max-width: 480px) {
+    body {
+        display: flex;
+        flex-flow: column;
+        #header .banner {
+            display: none;
+        }
+        .container3 {
+            display: none;
+        }
+        #car {
+            display: block;
+            width: 20vw;
+            height: 30vw;
+            object-fit: contain;
+        }
+        .container1 {
+            height: 100%;
+        }
     }
 }
