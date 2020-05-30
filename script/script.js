@@ -1,3 +1,5 @@
+alert(" Welcome to CodeFactory Insurance! ");
+
 function calculateInsurance() {
     var name = document.getElementById("name").value;
     var age = Number(document.getElementById("age").value);
